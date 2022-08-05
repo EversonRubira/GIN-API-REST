@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	database.ConectaComBancoDeDados()
+	database.connectWithDatabase()
 	routes.HandleRequest()
 
 }

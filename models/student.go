@@ -2,9 +2,9 @@ package models
 
 import "gorm.io/gorm"
 
-type Aluno struct {
+type Student struct {
 	gorm.Model
-	Nome string `json:"nome"`
+	Name string `json:"name"`
 	CPF  string `json:"cpf"`
 	RG   string `json:"rg"`
 }

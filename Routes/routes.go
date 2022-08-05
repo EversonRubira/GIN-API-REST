@@ -7,12 +7,12 @@ import (
 
 func HandleRequest() {
 	r := gin.Default()
-	r.GET("/alunos", controllers.ExibeTodosAlunos)
-	r.GET("/:nome", controllers.Saudacao)
-	r.POST("/alunos", controllers.CriaNovoAluno)
-	r.GET("/aluno/:id", controllers.BuscaAlunoPorID)
-	r.DELETE("/alunos/:id", controllers.DeleteAluno)
-	r.PATCH("/alunos/:id", controllers.EditaAluno)
+	r.GET("/Students", controllers.displaysAllStudents)
+	r.GET("/:name", controllers.Salutation)
+	r.POST("/students", controllers.createNewStudent)
+	r.GET("/student/:id", controllers.searchStudentById)
+	r.DELETE("/students/:id", controllers.deleteStudent)
+	r.PATCH("/students/:id", controllers.editStudent)
 	r.Run()
 
 }
