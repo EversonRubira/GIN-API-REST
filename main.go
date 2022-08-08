@@ -2,12 +2,12 @@ package main
 
 import (
 	routes "github.com/EversonRubira/api-go-gin/Routes"
-	"github.com/EversonRubira/api-go-gin/database"
+	database "github.com/EversonRubira/api-go-gin/database"
 )
 
 func main() {
 
-	database.connectWithDatabase()
+	database.DB.connectDatabase()
 	routes.HandleRequest()
 
 }
