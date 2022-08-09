@@ -76,7 +76,7 @@ func SearchStudentByCPF(c *gin.Context) {
 
 	if student.ID == 0 {
 		c.JSON(http.StatusNotFound, gin.H{
-			"Not found": "Aluno Nao Encontrado"})
+			"Not found": "Aluno nao Encontrado"})
 		return
 	}
 	c.JSON(http.StatusOK, student)

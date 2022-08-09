@@ -14,7 +14,7 @@ var (
 	err error
 )
 
-func connectDatabase() {
+func ConnectDatabase() {
 	stringDeConexao := "host=150.136.55.154 user=root password=root dbname=dev_db port=5432 sslmode=disable"
 	DB, err = gorm.Open(postgres.Open(stringDeConexao))
 	if err != nil {
